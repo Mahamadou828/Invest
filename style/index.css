@@ -136,10 +136,6 @@ a {
   color: #fff !important;
 }
 
-.logo-fixed {
-  color: #fff !important;
-}
-
 @media screen and (max-width: 992px) {
   .dispear {
     display: none;

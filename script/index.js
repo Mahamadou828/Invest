@@ -51,10 +51,8 @@ window.onload = function () {
 
   window.addEventListener("scroll", function () {
     const elt = document.querySelector(".navbar");
-    const logo = document.querySelector(".logo");
     const scrollPosition = window.scrollY;
     if (position > scrollPosition && scrollPosition > 10) {
-      console.log("vers le haut", scrollPosition);
       elt.classList.add("fixed");
       AnimateOpoacity(elt);
       window.setTimeout(function () {
