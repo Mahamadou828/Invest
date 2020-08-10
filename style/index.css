@@ -67,6 +67,21 @@ a {
   display: flex;
 }
 
+.fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  background-color: #333 !important;
+  opacity: 0;
+}
+
+.navbar-toggler {
+  color: #fff !important;
+  border-color: #fff !important;
+  font-size: 25px !important;
+  padding: 10px 15px !important;
+}
+
 .navbar .navbar-element {
   width: 100%;
   display: flex;
@@ -118,7 +133,11 @@ a {
   text-align: center;
   font-weight: 400;
   text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.35);
-  color: #333 !important;
+  color: #fff !important;
+}
+
+.logo-fixed {
+  color: #fff !important;
 }
 
 @media screen and (max-width: 992px) {
