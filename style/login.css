@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+body {
+  font-family: "Rubik", sans-serif !important;
+}
+
+a {
+  color: #c99c3b !important;
+}
+
+.login {
+  min-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.banner {
+  width: 60%;
+  height: 100%;
+  background-image: url("../image/twitter-1522890_1920.jpg");
+  background-position: 0% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0 28px 50px rgba(0, 0, 0, 0.16);
+}
+
+.banner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: #fff;
+  opacity: 0.3;
+}
+
+.login-form {
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 75px 0px 75px;
+  /* background-color: #f2f2f2; */
+}
+
+.login-form h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #727272;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.login-form button {
+  background-color: #c99c3b;
+  border: 1px solid #c99c3b;
+  max-width: 200px;
+  width: 200px;
+  margin: 0 auto;
+  color: #fff;
+  height: 42px;
+  padding: 0 30px;
+  font-size: 16px;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+
+.login-form .input-group-text {
+  background-color: #fff;
+  border-right: none !important;
+}
+
+.login-form .input-group-text i {
+  color: #c99c3b;
+  font-size: 16px;
+}
+
+.login-form input {
+  border-left: none !important;
+  padding-left: 0px !important;
+  outline: none !important;
+}
+
+.login-form .input-contain {
+  margin-top: 25px;
+}
+
+.login-form .input-contain .input-group {
+  margin-bottom: 25px !important;
+}
+
+.logo {
+  color: #727272 !important;
+  text-decoration: none;
+}
+
+.file {
+  text-align: start;
+}
+.file-input {
+  font-family: "Rubik", sans-serif !important;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #c99c3b;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 1px solid #c99c3b;
+  transition: all ease-out 0.3s;
+}
+
+.file-input:hover {
+  color: #c99c3b;
+  background: #fff;
+}
+.form-upload {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background-color: #131414;
+}
+
+@media screen and (max-width: 960px) {
+  .banner {
+    display: none;
+  }
+
+  .login-form {
+    width: 100%;
+    text-align: start;
+  }
+
+  .forget {
+    margin-left: 0px !important;
+    margin-right: auto !important;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .login-form {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

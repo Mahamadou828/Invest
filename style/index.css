@@ -125,6 +125,11 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.responsive-navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .seprator {
   margin: 0px !important;
 }
@@ -225,6 +230,7 @@ a {
   flex-direction: row;
   justify-content: end;
   align-items: flex-end;
+  background-attachment: fixed;
 }
 
 .home::before {

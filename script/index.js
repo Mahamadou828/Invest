@@ -15,6 +15,21 @@ function AnimateOpoacity(elt) {
 }
 
 window.onload = function () {
+  // $(
+  //   ".navbar a:not('.dropdownSelect'), .text-center-remote , .button-link , .portfolio"
+  // ).on("click", function (event) {
+  //   event.preventDefault();
+  //   const hash = this.hash;
+
+  //   $("body,html").animate(
+  //     { scrollTop: $(hash).offset().top },
+  //     900,
+  //     function () {
+  //       window.location.hash = hash;
+  //     }
+  //   );
+  // });
+
   let position = window.scrollY;
   document
     .querySelector(".navbar-toggler")
@@ -51,6 +66,7 @@ window.onload = function () {
 
   window.addEventListener("scroll", function () {
     const elt = document.querySelector(".navbar");
+    let toTop = false;
     const scrollPosition = window.scrollY;
     if (position > scrollPosition && scrollPosition > 10) {
       elt.classList.add("fixed");
@@ -61,6 +77,7 @@ window.onload = function () {
     } else if (scrollPosition <= 20) {
       elt.classList.remove("fixed");
     } else {
+      toTop = false;
       elt.animate(
         [
           {
