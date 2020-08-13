@@ -1,3 +1,5 @@
+alert("T'as js");
+
 /**
  * Animate The Opacity Of An element
  * @param {HTMLElement} elt
