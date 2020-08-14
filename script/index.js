@@ -1,21 +1,10 @@
-alert("T'as js");
-
 /**
  * Animate The Opacity Of An element
  * @param {HTMLElement} elt
  * @returns {void}
  */
 function AnimateOpoacity(elt) {
-  elt.animate(
-    [
-      {
-        opacity: 1,
-      },
-    ],
-    {
-      duration: 300,
-    }
-  );
+  elt.style.transition = "all ease-in 0.2s";
 }
 
 /**
@@ -25,16 +14,7 @@ function AnimateOpoacity(elt) {
 function RemoveNavbar() {
   const elt = document.querySelector(".responsive-navbar");
   elt.classList.remove("appear");
-  elt.animate(
-    [
-      {
-        opacity: 0,
-      },
-    ],
-    {
-      duration: 300,
-    }
-  );
+  elt.style.opacity = 0;
   window.setTimeout(function () {
     elt.classList.add("dispear");
     elt.style.opacity = null;
