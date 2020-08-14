@@ -35,6 +35,7 @@ NavLink.forEach(function (item) {
       e.preventDefault();
       document.querySelector(hash).scrollIntoView({ behavior: "smooth" });
     }
+    document.body.style.overflowY = null;
   });
 });
 
@@ -45,6 +46,7 @@ document
     elt.classList.remove("dispear");
     elt.classList.add("appear");
     AnimateOpoacity(elt);
+    document.body.style.overflowY = "hidden";
     window.setTimeout(function () {
       elt.style.opacity = 1;
     }, 300);
@@ -52,6 +54,7 @@ document
 
 document.querySelector(".navbar-close").addEventListener("click", function () {
   RemoveNavbar();
+  document.body.style.overflowY = null;
 });
 
 window.addEventListener("scroll", function () {
