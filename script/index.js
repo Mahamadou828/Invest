@@ -74,20 +74,7 @@ window.addEventListener("scroll", function () {
     elt.classList.remove("fixed");
   } else {
     toTop = false;
-    elt.animate(
-      [
-        {
-          opacity: 0,
-        },
-      ],
-      {
-        duration: 300,
-      }
-    );
-    window.setTimeout(function () {
-      elt.style.opacity = null;
-      elt.classList.remove("fixed");
-    }, 300);
+    elt.style.opacity = 0;
   }
   position = scrollPosition;
 });
